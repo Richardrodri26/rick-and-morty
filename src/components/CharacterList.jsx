@@ -6,7 +6,7 @@ function NavPage(props) {
   return (
     <header className="d-flex justify-content-between align-items-center">
       <button className=" btn-primary btn-sm"
-        onClick={()=> props.setPage(props.page > 1 ? props.page - 1 : error )}
+        onClick={()=> props.setPage(props.page > 1 ? props.page - 1 : props.page )}
       >
         Page {props.page - 1 }
       </button>
